@@ -3,9 +3,7 @@ package com.example.happybirthday
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.Arrangement
-import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Surface
@@ -32,7 +30,7 @@ class MainActivity : ComponentActivity() {
                 ){
                     GreetingText(
                         message = "Happy  Birthday Sam!",
-                        from = "From Emma",
+                        from = "From Louise",
                         modifier = Modifier.padding(8.dp)
                     )
                 }
@@ -68,6 +66,6 @@ fun GreetingText(message: String, from: String, modifier : Modifier = Modifier) 
 @Composable
 fun BirthdayCardPreview() {
     HappyBirthdayTheme {
-        GreetingText(message = "Happy Birthday Sam!", from = "From Emma")
+        GreetingText(message = "Happy Birthday Sam!", from = "From Louise")
     }
 }
